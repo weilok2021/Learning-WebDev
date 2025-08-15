@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            background-color: blue;
+            transition: opacity 2s;
+            transition: background-color 3s;
+        }
+
+        h1:active {
+            opacity: 0.2;
+            background-color: green;
+        }
+
+        div span {
+            /* make span inline but with properties of block element such as width and height can be changed*/
+            display: inline-block;
+            margin: 10px;
+            background-color: black;
+            height: 100px;
+            width: 100px;
+        }
+
+     
+        /* #relative .middle {
+            background-color: aqua;
+            position: relative;
+            top: 100px;
+        } */
+
+        #absolute {
+            position: relative;
+        }
+
+        #absolute .middle {
+            background-color: red;
+            position: absolute; /*position relatived to parent element when parent element is positioned(not static)*/
+            top: 50px;
+        }
+
+        #fixed .middle {
+            background-color: blueviolet;
+            position: fixed;
+            right: 0;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Opacity&Position&Transition</h1>
+    <div id="relative">
+        <h2>Relative</h2>
+        <span></span>
+        <span class="middle"></span>
+        <span></span>
+    </div>
+    <div id="absolute"> 
+        <h2>Absolute</h2>
+        <span></span>
+        <span class="middle"></span>
+        <span></span>
+    </div>
+    <div id="fixed">
+        <h2>Fixed</h2> 
+        <span></span>
+        <span class="middle"></span>
+        <span></span>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        blockquote,
+        q {
+            quotes: none;
+        }
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #60a9ff;
+            min-height: 100vh;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .panel {
+            display: flex;
+            justify-content: space-around;
+            align-items: stretch;
+            background-color: white;
+            width: 55%;
+            min-height: 80%;
+            border: medium solid grey;
+            border-radius: 10px;
+        }
+
+        .panel>* {
+            /*flex container properties*/
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            /* height: 600px; */
+
+            /* flex item properties horizontally*/
+            flex: 1 1 33%;
+
+        }
+
+        .panel>*>* {
+            /* flex item properties vertically*/
+            flex: 1 1 10%;
+            padding: 5px;
+            margin: 5px 0;
+            border-bottom: 1px solid #eee;
+            /* Very subtle */
+        }
+
+        .panel>*>figcaption {
+            color: #888;
+            letter-spacing: 1px;
+            font-weight: 700;
+            font-size: 1.5em;
+            opacity: 0.85;
+        }
+
+        .panel>*>ul {
+            /* display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center; */
+
+            /* flex item properties vertically*/
+            flex: 1 2 30%;
+        }
+
+        .panel>*>ul>li {
+            /* flex: 1 1 33%; */
+            color: #60a9ff;
+            text-align: center;
+            padding: 5px;
+            margin: 5px 0;
+        }
+
+        .panel>*>img {
+            flex-basis: 35%;
+            width: 90%;
+        }
+
+        .panel>*>ul>:nth-child(3) {
+            font-size: 2em;
+            font-weight: 900;
+            color: #60a9ff;
+        }
+
+        button {
+            border-radius: 5px;
+        }
+
+        button[class='a'],
+        button[class='c'] {
+            color: #60a9ff;
+            background-color: white;
+        }
+
+        button[class='b'] {
+            color: white;
+            background-color: #60a9ff;
+        }
+
+        @media (max-width: 700px) {
+            .panel {
+                flex-direction: column;
+            }
+        }

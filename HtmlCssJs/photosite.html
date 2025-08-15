@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeiLok Photo Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        html,
+        body {
+            height: 100vh;
+            /* 100vh = 100% of viewport height */
+        }
+
+        nav {
+            /*to position nav-bar child as the nav-bar position relitive to its nearest positioned ancestor which is nav*/
+            position: relative; 
+            margin: 0 calc(10% / 6);
+            border-bottom: 2px solid #eee;
+            padding: 10px 0;
+        }
+
+
+        h1 {
+            display: inline-block;
+            margin: 0;
+            font-size: 2em;
+        }
+
+
+        section {
+            margin: calc(10% / 6);
+            display: inline-block;
+            background-size: cover;
+            height: 40%;
+            width: 30%;
+
+        }
+
+        #section1 {
+            background-image: url("img/WhatsApp Image 2025-07-24 at 12.40.01 AM.jpeg");
+        }
+
+        #section2 {
+            
+            background-image: url("img/WhatsApp Image 2025-07-24 at 12.44.05 AM.jpeg");
+        }
+
+        #section3 {
+            background-image: url("img/WhatsApp Image 2025-03-08 at 1.08.33 AM.jpeg");
+        }
+
+        #nav-bar {
+            position: absolute; 
+            right: 0; 
+            margin: 0;
+        }
+
+        #nav-bar, #nav-bar li {
+            display: inline-block;
+        } 
+
+        #nav-bar li {
+            font-size: 1.1em;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>Weilok/Photo Site</h1>
+        <ul id="nav-bar">
+            <li><a href="photosite.html">Home</a></li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <section id="section1"></section><section id="section2"></section><section id="section3"></section>
+    <!-- <img src="img/WhatsApp Image 2025-07-24 at 12.40.01 AM.jpeg"><img src="img/WhatsApp Image 2025-07-24 at 12.44.05 AM.jpeg"><img src="img/WhatsApp Image 2025-07-24 at 12.48.45 AM.jpeg"> -->
+</body>
+
+</html>

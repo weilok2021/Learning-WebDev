@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList in JS</title>
+</head>
+
+<body>
+    <h1>TODO List only in JS</h1>
+    <ul>
+        <li>"new" - Add a Todo</li>
+        <li>"list" - List all Todos</li>
+        <li>"delete" - Remove specific Todo</li>
+        <li>"quit" - Quit App</li>
+    </ul>
+
+
+    <script>
+        const todo = [];
+        let count = 5;
+        while (true) {
+            const command = prompt("Please enter a command: ").toLowerCase();
+            if (command === "new") {
+                const task = prompt("Enter new TODO: ").toLowerCase()
+                todo.push(task);
+                console.log(`${task} added to list`);
+            }
+            else if (command === "list") {
+                console.log("********************");
+                for (let i = 0; i < todo.length; i++) {
+                    console.log(`task ${i}: ${todo[i]}`);
+                }
+                console.log("********************");
+            }
+            else if (command === "delete") {
+                const posRemove = parseInt(prompt("Please specify the task you want to delete (enter the position)"));
+                let removed;
+                // if (posRemove === 0) {
+                //     // remove the first element
+                //     removed = todo.shift();
+                // }
+                // else if (posRemove === todo.length - 1) {
+                //     removed = todo.pop();
+                // }
+                // // this element to be removed is not first or last element, but elements within.
+                // else {
+                //     removed = todo[posRemove];
+                //     todo[posRemove] = undefined;  // set current pos to undefined               
+                //     for (let i = posRemove + 1; i < todo.length; i++) {
+                //         todo[i - 1] = todo[i]; // move this element 1 step to the left.…
+                //         todo[i] = undefined;
+                //     }
+                // }
+
+                // remove 1 element at index posRemove.
+                removed = todo.splice(posRemove, 1);
+                console.log(`Element ${removed} has been removed!`);
+            }
+            else if (command === "quit") {
+                console.log("The app has been quit!");
+                break;
+            }
+        }
+    </script>
+</body>
+
+</html>

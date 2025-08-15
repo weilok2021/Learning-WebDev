@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Computer Science Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="bg-white shadow-sm p-4 sticky top-0 z-50 rounded-b-lg">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#"
+                class="text-2xl font-bold text-indigo-600 rounded-md p-2 hover:bg-indigo-50 transition-colors">WeiLok/Portfolio</a>
+            <ul class="flex space-x-6">
+                <li><a href="#about"
+                        class="text-gray-600 hover:text-indigo-600 font-medium transition-colors rounded-md p-2 hover:bg-indigo-50">About</a>
+                </li>
+                <li><a href="#skills"
+                        class="text-gray-600 hover:text-indigo-600 font-medium transition-colors rounded-md p-2 hover:bg-indigo-50">Skills</a>
+                </li>
+                <li><a href="#projects"
+                        class="text-gray-600 hover:text-indigo-600 font-medium transition-colors rounded-md p-2 hover:bg-indigo-50">Projects</a>
+                </li>
+                <li><a href="#contact"
+                        class="text-gray-600 hover:text-indigo-600 font-medium transition-colors rounded-md p-2 hover:bg-indigo-50">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero"
+        class="flex items-center justify-center min-h-[calc(100vh-80px)] bg-gradient-to-r from-indigo-500 to-purple-600 text-white p-6 rounded-b-lg shadow-lg">
+        <div class="text-center max-w-2xl space-y-6">
+            <h1 class="text-5xl font-extrabold leading-tight tracking-tight sm:text-6xl">
+                Hi, I'm <span class="text-yellow-300">Wei Lok Chia</span>
+            </h1>
+            <p class="text-xl sm:text-2xl opacity-90">
+                A Passionate Web Developer | Passionate about creating impactful products.
+            </p>
+            <a href="#projects"
+                class="inline-flex items-center px-8 py-4 bg-white text-indigo-700 font-bold text-lg rounded-full shadow-lg hover:bg-indigo-100 transition-all duration-300 transform hover:scale-105 group">
+                View My Work
+                <svg class="icon icon-chevron-right ml-2 w-6 h-6 transform transition-transform group-hover:translate-x-1"
+                    viewBox="0 0 24 24">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white rounded-lg shadow-md mx-auto my-8 max-w-5xl p-6 md:p-10">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-indigo-700 mb-8 flex items-center justify-center">
+                <svg class="icon icon-briefcase mr-3 w-8 h-8 text-indigo-600" viewBox="0 0 24 24">
+                    <rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+                About Me
+            </h2>
+            <div class="text-lg leading-relaxed text-gray-700 space-y-4">
+                <p>
+                    Hello! I'm a recent Computer Science graduate with a strong foundation in programming,
+                    algorithms, and software development. During my studies, I gained hands-on experience
+                    in various projects, applying theoretical knowledge to real-world challenges.
+                </p>
+                <p>
+                    I am particularly interested in <strong>web development</strong> and <strong>data
+                        structures</strong>. I enjoy problem-solving
+                    and am eager to contribute to innovative projects. My goal is to grow as a software engineer,
+                    continuously learn new technologies, and build robust, scalable applications.
+                </p>
+                <p>
+                    I'm always looking for opportunities to expand my skill set and collaborate on exciting ideas.
+                    Feel free to connect with me!
+                </p>
+            </div>
+            <div class="mt-8">
+                <a href="path/to/your/resume.pdf" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center px-8 py-4 bg-purple-600 text-white font-bold text-lg rounded-full shadow-lg hover:bg-purple-700 transition-all duration-300 transform hover:scale-105 group">
+                    Download Resume
+                    <svg class="icon icon-briefcase ml-2 w-6 h-6" viewBox="0 0 24 24">
+                        <rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50 rounded-lg shadow-md mx-auto my-8 max-w-5xl p-6 md:p-10">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-indigo-700 mb-8 flex items-center justify-center">
+                <svg class="icon icon-code mr-3 w-8 h-8 text-indigo-600" viewBox="0 0 24 24">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                Skills
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+                <!-- Programming Languages -->
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Programming Languages</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center"><svg class="icon icon-chevron-right mr-2 text-indigo-500"
+                                viewBox="0 0 24 24">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg> JavaScript</li>
+                        <li class="flex items-center"><svg class="icon icon-chevron-right mr-2 text-indigo-500"
+                                viewBox="0 0 24 24">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg> Python</li>
+                        <li class="flex items-center"><svg class="icon icon-chevron-right mr-2 text-indigo-500"
+                                viewBox="0 0 24 24">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg> Java</li>
+                        <li class="flex items-center"><svg class="icon icon-chevron-right mr-2 text-indigo-500"
+                                viewBox="0 0 24 24">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg> C</li>
+                        <li class="flex items-center"><svg class="icon icon-chevron-right mr-2 text-indigo-500"
+                                viewBox="0 0 24 24">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg> SQL</li>
+                    </ul>
+                </div>
+
+                <!-- Frameworks & Libraries (Current Focus) -->
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Current Focus</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center"><svg class="icon icon-chevron-right mr-2 text-indigo-500"
+                                viewBox="0 0 24 24">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg> HTML5</li>
+                        <li class="flex items-center"><svg class="icon icon-chevron-right mr-2 text-indigo-500"
+                                viewBox="0 0 24 24">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg> CSS3</li>
+                        <li class="flex items-center"><svg class="icon icon-chevron-right mr-2 text-indigo-500"
+                                viewBox="0 0 24 24">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg> Vanilla JavaScript</li>
+                        <li class="flex items-center"><svg class="icon icon-chevron-right mr-2 text-indigo-500"
+                                viewBox="0 0 24 24">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg> Test Driven Development</li>
+                        <li class="flex items-center"><svg class="icon icon-chevron-right mr-2 text-indigo-500"
+                                viewBox="0 0 24 24">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg> Functional Programming</li>
+                        <li class="flex items-center"><svg class="icon icon-chevron-right mr-2 text-indigo-500"
+                                viewBox="0 0 24 24">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg> Object Oritented Design</li>
+                    </ul>
+                </div>
+
+                <!-- Tools & Databases (Future Learning) -->
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Learning Next</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center"><svg class="icon icon-chevron-right mr-2 text-indigo-500"
+                                viewBox="0 0 24 24">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg> Node.js</li>
+                        <li class="flex items-center"><svg class="icon icon-chevron-right mr-2 text-indigo-500"
+                                viewBox="0 0 24 24">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg> Express.js</li>
+                        <li class="flex items-center"><svg class="icon icon-chevron-right mr-2 text-indigo-500"
+                                viewBox="0 0 24 24">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg> MongoDB</li>
+                        <li class="flex items-center"><svg class="icon icon-chevron-right mr-2 text-indigo-500"
+                                viewBox="0 0 24 24">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg> React.js</li>
+                        <li class="flex items-center"><svg class="icon icon-chevron-right mr-2 text-indigo-500"
+                                viewBox="0 0 24 24">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg> Tailwind/Bootstrap CSS</li>
+                        <li class="flex items-center"><svg class="icon icon-chevron-right mr-2 text-indigo-500"
+                                viewBox="0 0 24 24">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg> CI/CD</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white rounded-lg shadow-md mx-auto my-8 max-w-5xl p-6 md:p-10">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-indigo-700 mb-12 flex items-center justify-center">
+                <svg class="icon icon-briefcase mr-3 w-8 h-8 text-indigo-600" viewBox="0 0 24 24">
+                    <rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+                My Projects
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Project 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-gray-200 flex flex-col items-start text-left hover:shadow-lg transition-shadow duration-300">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Simple Calculator</h3>
+                    <p class="text-gray-700 mb-4 flex-grow">
+                        A basic calculator application built using HTML, CSS, and JavaScript. It handles standard
+                        arithmetic operations and provides a clean user interface. This project demonstrates
+                        foundational understanding of DOM manipulation and event handling.
+                    </p>
+                    <div class="mt-auto">
+                        <a href="https://github.com/yourusername/simple-calculator" target="_blank"
+                            rel="noopener noreferrer"
+                            class="inline-flex items-center text-indigo-600 hover:text-indigo-800 font-medium transition-colors group">
+                            View Code
+                            <svg class="icon icon-github ml-2 w-5 h-5 text-indigo-600 group-hover:text-indigo-800"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.44-.78-3.5.25-1 .1-2.17-.46-3.26 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.56 1.09-.72 2.26-.46 3.26-.5.06-1.01.1-1.55.14-.53.05-1.04.1-1.55.14v0A4.8 4.8 0 0 0 2 13.5c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.25-.13 1.95v0a10 10 0 0 0 2 2.5c.39.49.68 1.05.85 1.65.17.6.22 1.25.13 1.95V22">
+                                </path>
+                                <path
+                                    d="M9 18c-3 0-5-2-5-5.5 0-1.5.5-2.5 1-3.5 1-3 3-5.5 3-5.5 0 0 2 0 3.5 1.5 2.5-1 5-1 5-1V22">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div
+                    class="bg-gray-50 p-6 rounded-lg shadow-md border border-gray-200 flex flex-col items-start text-left hover:shadow-lg transition-shadow duration-300">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">To-Do List App</h3>
+                    <p class="text-gray-700 mb-4 flex-grow">
+                        An interactive to-do list application where users can add, delete, and mark tasks as complete.
+                        This project highlights proficiency in manipulating the DOM, managing application state (without
+                        a framework), and local storage integration for persistence.
+                    </p>
+                    <div class="mt-auto">
+                        <a href="https://github.com/yourusername/todo-list-app" target="_blank"
+                            rel="noopener noreferrer"
+                            class="inline-flex items-center text-indigo-600 hover:text-indigo-800 font-medium transition-colors group">
+                            View Code
+                            <svg class="icon icon-github ml-2 w-5 h-5 text-indigo-600 group-hover:text-indigo-800"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.44-.78-3.5.25-1 .1-2.17-.46-3.26 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.56 1.09-.72 2.26-.46 3.26-.5.06-1.01.1-1.55.14-.53.05-1.04.1-1.55.14v0A4.8 4.8 0 0 0 2 13.5c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.25-.13 1.95v0a10 10 0 0 0 2 2.5c.39.49.68 1.05.85 1.65.17.6.22 1.25.13 1.95V22">
+                                </path>
+                                <path
+                                    d="M9 18c-3 0-5-2-5-5.5 0-1.5.5-2.5 1-3.5 1-3 3-5.5 3-5.5 0 0 2 0 3.5 1.5 2.5-1 5-1 5-1V22">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Add more projects as needed -->
+                 
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50 rounded-lg shadow-md mx-auto my-8 max-w-5xl p-6 md:p-10">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-indigo-700 mb-12 flex items-center justify-center">
+                <svg class="icon icon-mail mr-3 w-8 h-8 text-indigo-600" viewBox="0 0 24 24">
+                    <rect width="20" height="16" x="2" y="4" rx="2" ry="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+                Get In Touch
+            </h2>
+            <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
+                I'm currently open to new opportunities and collaborations. Feel free to reach out to me via email or
+                connect on LinkedIn/GitHub!
+            </p>
+            <div class="flex justify-center space-x-6">
+                <a href="mailto:your.email@example.com"
+                    class="inline-flex items-center px-6 py-3 bg-indigo-600 text-white font-medium rounded-full shadow-lg hover:bg-indigo-700 transition-colors duration-300 transform hover:scale-105">
+                    Email Me
+                    <svg class="icon icon-mail ml-2 w-5 h-5" viewBox="0 0 24 24">
+                        <rect width="20" height="16" x="2" y="4" rx="2" ry="2"></rect>
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                    </svg>
+                </a>
+                <a href="https://linkedin.com/in/yourlinkedinprofile" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center px-6 py-3 bg-blue-700 text-white font-medium rounded-full shadow-lg hover:bg-blue-800 transition-colors duration-300 transform hover:scale-105">
+                    LinkedIn
+                    <svg class="icon icon-linkedin ml-2 w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect width="4" height="12" x="2" y="9"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+                <a href="https://github.com/yourgithubusername" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center px-6 py-3 bg-gray-800 text-white font-medium rounded-full shadow-lg hover:bg-gray-900 transition-colors duration-300 transform hover:scale-105">
+                    GitHub
+                    <svg class="icon icon-github ml-2 w-5 h-5" viewBox="0 0 24 24">
+                        <path
+                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.44-.78-3.5.25-1 .1-2.17-.46-3.26 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.56 1.09-.72 2.26-.46 3.26-.5.06-1.01.1-1.55.14-.53.05-1.04.1-1.55.14v0A4.8 4.8 0 0 0 2 13.5c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.25-.13 1.95v0a10 10 0 0 0 2 2.5c.39.49.68 1.05.85 1.65.17.6.22 1.25.13 1.95V22">
+                        </path>
+                        <path
+                            d="M9 18c-3 0-5-2-5-5.5 0-1.5.5-2.5 1-3.5 1-3 3-5.5 3-5.5 0 0 2 0 3.5 1.5 2.5-1 5-1 5-1V22">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-8 rounded-t-lg shadow-inner">
+        <div class="container mx-auto text-center text-sm">
+            <p>&copy; <span id="currentYear"></span> Your Name. All rights reserved.</p>
+            <p class="mt-2">Handcrafted with HTML, CSS, and JavaScript</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

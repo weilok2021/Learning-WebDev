@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H1 changes</title>
+</head>
+<body>
+    <h1>Change</h1>
+    <form action="">
+        <input type="text">
+        <button>Change</button>
+    </form>
+
+    <script>
+        const form = document.querySelector("form");
+        const input = document.querySelector("input");
+        const h1 = document.querySelector("h1");
+
+        form.addEventListener("submit", function(e) {
+            // prevent form submitting to server
+            e.preventDefault();
+        });
+
+        input.addEventListener("input", function() {
+            h1.innerText = this.value;
+            console.log(this.value);
+        })
+    </script>
+</body>
+</html>

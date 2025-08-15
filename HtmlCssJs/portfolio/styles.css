@@ -1,0 +1,49 @@
+/* Custom CSS to ensure Inter font is applied and smooth scrolling */
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+        /* @apply bg-gray-100 text-gray-800; */
+}
+
+/* Basic SVG icons (as we can't use Lucide React directly) */
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}
+
+.icon-code {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-briefcase {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-mail {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-linkedin {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-github {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-chevron-right {
+    width: 20px;
+    height: 20px;
+}
+
+/* Slightly smaller for lists */

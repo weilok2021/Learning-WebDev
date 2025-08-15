@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Panel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+                html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        blockquote,
+        q {
+            quotes: none;
+        }
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        body {
+            background-color: #60a9ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            max-width: 100vw;
+        }
+
+        .panel {
+            min-width: 50%;
+            height: 100%;
+            margin: 100px 0;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border: 2px solid grey;
+            border-radius: 10px;
+        }
+
+        .panel > * {
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        img {
+            width: 60%;
+            height: 20%;
+        }
+
+        figcaption {
+            margin-bottom: 50px;
+            font-size: 2rem;
+            letter-spacing: 3px;
+            color:gray;
+        }
+
+        .pricing-item {
+            padding: 10px;
+            margin-bottom: 5px;
+            color: #60a9ff;
+            font-size: 1.3rem;
+        }
+
+        ul li:nth-child(3){
+            color: #60a9ff; 
+            font-size: 3rem;;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="panel">
+        <div class="one1">
+            <img src="https://img.freepik.com/free-vector/employees-cv-candidates-resume-corporate-workers-students-id-isolate-flat-design-element-job-applications-avatars-personal-information_335657-145.jpg?size=338&ext=jpg&uid=R34134199&ga=GA1.2.301994707.1610099029"
+                alt="first image">
+            <figcaption>personal</figcaption>
+            <ul>
+                <li class="pricing-item">custom domain</li>
+                <li class="pricing-item">sleeps after 30 mins of inactivity</li>
+                <li class="pricing-item" id="ullu1">free</li>
+            </ul>
+            <button class="a">sign up</button>
+        </div>
+
+        <div class="one2">
+            <img src="https://image.freepik.com/free-vector/psychology-success_272892-30.jpg" alt="second image">
+            <figcaption>small team</figcaption>
+            <ul>
+                <li class="pricing-item">never sleeps</li>
+                <li class="pricing-item">multiple workers for more powerful apps</li>
+                <li class="pricing-item" id="ullu2">&#36;150</li>
+            </ul>
+            <button class="b">free trial</button>
+        </div>
+
+        <div class="one3">
+            <img
+                src="https://image.freepik.com/free-vector/personal-growth-motivation-career-ambitions-proactive-mindset-goals-setting-man-planning-high-achievements-boosting-leadership-skills_335657-2112.jpg">
+            <figcaption>enterprice</figcaption>
+            <ul>
+                <li class="pricing-item">dedicated</li>
+                <li class="pricing-item">simple horizontal scalability</li>
+                <li class="pricing-item" id="ullu3">&#36;400</li>
+            </ul>
+            <button class="c">free trial</button>
+        </div>
+    </div>
+</body>
+
+</html>

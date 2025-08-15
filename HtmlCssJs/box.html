@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #box {
+            width: 100%;
+            background-color: aquamarine;
+            font-size: 20px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Descendant Selector */
+        div p {
+            text-align: center;
+            background-color: blanchedalmond;
+            text-decoration: underline;
+            letter-spacing: 10px;
+        }
+
+        /* Attribute selector */
+        input[type="text"] {
+            background-color: beige;
+            color: cadetblue;
+        }
+
+        input[type="submit"] {
+            background-color: cadetblue;
+            color: beige;
+            background-color: aliceblue;
+            color: black;
+        }
+
+        /* pseudo class */
+        input[type="submit"]:hover {
+            background-color: cadetblue;
+            color: beige;
+        }
+
+        html,
+        body {
+            height: 100vh;
+            /* 100vh = 100% of viewport height */
+            margin: 0;
+            /* Remove default margins */
+        }
+
+        /* make a circle */
+        #circle {
+            padding: 10px;
+            margin: 5px;;
+            background-color: blueviolet;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            /* 50% of 200px = 100px radius */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Box Model</h1>
+    <div id="box">Li Sheng foreveer in shadeng</div>
+    <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio quidem ex, esse sint minima temporibus
+            repudiandae quos ut et sapiente vel qui quaerat. Expedita minima consequatur esse dolore dolor omnis?</p>
+    </div>
+
+    <div id="circle">
+    </div>
+
+    <input type="text" placeholder="Type Something">
+    <input type="submit" value="Submit">
+</body>
+
+</html>

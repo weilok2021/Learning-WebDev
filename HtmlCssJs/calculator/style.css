@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#calculator {
+    background-color: aqua;
+    height: 60%;
+    display: grid;
+}
+
+#answer {
+    background-color: black;
+    color: white;
+}

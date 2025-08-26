@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head.ejs') %>
+
+  <body>
+    <h1>Edit Comment</h1>
+    <form method="post" action="/comments/<%= comment.id %>?_method=PATCH">
+      <section>
+        <textarea name="editComment" id="editComment" rows="20" cols="50">
+        <%= comment.comment %>
+      </textarea>
+        <button>Submit</button>
+      </section>
+    </form>
+  </body>
+
+</html>

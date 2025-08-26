@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <%- include('partials/head.ejs') %>
+
+  <body>
+    <h1>Comment</h1>
+    <section>
+      <p>
+        <%= comment.comment %>
+      </p>
+      <p>By user: <%= comment.userName %>
+      </p>
+    </section>
+    <a href="/comments/<%= comment.id %>/edit">Edit Comment</a>
+    <form action="/comments/<%= comment.id %>?_method=DELETE" method="POST">
+      <button type="submit">Delete Comment</button>
+    </form>
+  </body>
+
+</html>

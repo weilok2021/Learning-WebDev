@@ -1,0 +1,24 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wiki</title>
+  <link rel="stylesheet" href="/stylesheets/app.css">
+</head>
+<body>
+  <h1>Wiki</h1>
+</body>
+</html> -->
+
+    <%- include("./layout.ejs") %>
+    <h1>All Entries</h1>
+    <ul>
+      <% for( let entry of entries) { %>
+        <li><a href="/wiki/<%= entry %>"><%= entry %></a></li>
+      <% } %>
+    </ul>
+
+    </div>
+  </body>
+</html>

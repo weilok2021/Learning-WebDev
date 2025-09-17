@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("partials/head.ejs", { title }) %>
+
+  <body>
+    <div class="row">
+      <%- include("partials/sidebar.ejs", { nav: nav}) %>
+        <div class="main col-lg-10 col-md-9">
+          <form action="/wiki" method="post">
+            <section>
+              <label for="entryName">Entry Title</label>
+              <input type="text" name="entryName" placeholder="Create Entry" required>
+            </section>
+            <label for="entryContent">Entry Content</label>
+            <section>
+              <textarea name="entryContent" id="entryContent" required></textarea>
+            </section>
+            <button>Save</button>
+          </form>
+        </div>
+    </div>
+  </body>
+
+</html>

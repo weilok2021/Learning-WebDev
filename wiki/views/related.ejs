@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("partials/head.ejs", { title }) %>
+
+  <body>
+    <div class="row">
+      <%- include("partials/sidebar.ejs", { nav: nav}) %>
+        <div class="main col-lg-10 col-md-9">
+          <h1>Related Entries</h1>
+          <% if (message) { %>
+            <h2>Reminder: <%= message %></h2>
+          <% } %>
+          <ul>
+            <% for( let entry of relatedEntries) { %>
+              <li><a href="/wiki/<%= entry %>">
+                  <%= entry.toUpperCase() %>
+                </a></li>
+              <% } %>
+          </ul>
+        </div>
+    </div>
+    </div>
+  </body>
+
+</html>

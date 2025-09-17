@@ -1,5 +1,18 @@
-    <%- include("./layout.ejs") %>
-      <%- content %>
+<!DOCTYPE html>
+<html lang="en">
+<%- include("partials/head.ejs", { title: title.toUpperCase() }) %>
+
+  <body>
+    <div class="row">
+      <%- include("partials/sidebar.ejs", { nav: nav}) %>
+        <div class="main col-lg-10 col-md-9">
+          <h1><%= title.toUpperCase() %></h1>
+          <%- content %>
+          <form method="POST" action="/wiki/<%= title %>?_method=DELETE">
+            <button>Delete Entry</button>
+          </form>
+        </div>
     </div>
   </body>
+
 </html>

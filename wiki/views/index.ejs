@@ -1,24 +1,24 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wiki</title>
-  <link rel="stylesheet" href="/stylesheets/app.css">
-</head>
-<body>
-  <h1>Wiki</h1>
-</body>
-</html> -->
+  <%- include("partials/head.ejs", { title: title}) %>
 
-    <%- include("./layout.ejs") %>
-    <h1>All Entries</h1>
-    <ul>
-      <% for( let entry of entries) { %>
-        <li><a href="/wiki/<%= entry %>"><%= entry %></a></li>
-      <% } %>
-    </ul>
-
+  <body>
+    <div class="row">
+      <%- include("partials/sidebar.ejs", { nav: nav}) %>
+      <div class="main col-lg-10 col-md-9">
+        <h1>All Entries</h1>
+        <% if (message) { %>
+         <h2><%= message %></h2>
+        <% } %>
+        <ul>
+          <% for( let entry of entries) { %>
+            <li><a href="/wiki/<%= entry %>">
+                <%= entry.toUpperCase() %>
+              </a></li>
+            <% } %>
+        </ul>
+      </div>
     </div>
   </body>
+
 </html>
